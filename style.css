@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Lora',serif;
+    line-height: 1.6;
+}
+
+.container{
+    height: 100vh;
+}
+
+.card{
+    border: 0px #000 solid;
+    border-radius: 15px;
+    width: 700px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.header{
+    background-color: #3e57db;
+    width: 100%;
+    padding: 20px 30px;
+    color:#fff;
+}
+
+.form-control{
+    margin: 10px 15px;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+label{
+    font-family: 'Lora',serif;
+}
+
+#todo{
+    border: 0;
+    border-radius: 15px;
+    padding: 7px 10px 7px 10px;
+    font-size: 14px;
+    width: 80%;
+}
+
+#todo:focus{
+    outline: none;
+}
+
+.header button[type="button"]{
+    font-family: 'Lora',serif;
+    font-size: 18px;
+    padding: 5px;
+    width: 6rem;
+    border: 2px #fff solid;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-item{
+    margin-left: 25px;
+    padding: 5px 0;
+}
+
+@media (max-width:768px) {
+    .card{
+        width: 80%;
+    }
+}
